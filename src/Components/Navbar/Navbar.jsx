@@ -1,18 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/Logo1.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    function handleOutsideClick(event) {
+      // Menu açıksa ve tıklanan alan navRef içerisinde değilse menüyü kapat
+      if (isOpen && navRef.current && !navRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
+    // Mousedown veya click event'i dinlemek için.
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [isOpen]);
 
   return (
-    <div className="navbar">
+    <div className="navbar" ref={navRef}>
       <div className="navbar__logo">
         <a href="">
           <img src={Logo} alt="logo" className="Logo" />
         </a>
       </div>
-
       <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         <span></span>
         <span></span>
