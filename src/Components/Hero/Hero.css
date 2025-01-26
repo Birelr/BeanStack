@@ -1,6 +1,7 @@
 .hero-container {
     width: 100%;
     overflow: hidden;
+    height: 60vh
   }
 
   .hero-video {
@@ -18,7 +19,7 @@
     text-align: center;
     font-size: small;
     color: white;
-    margin-top: 5rem;
+    margin-top: 11rem;
   }
 
   .hero-btn{
@@ -50,7 +51,7 @@
 
     .hero-content {
       font-size: large;
-      margin-top: 10rem;
+      margin-top: 14rem;
     }
     .hero-btn{
       padding: 1.3rem;
