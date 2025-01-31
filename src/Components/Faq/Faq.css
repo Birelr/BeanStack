@@ -12,6 +12,10 @@
     margin-bottom: 5rem;
     padding-bottom: 1rem;
   }
+  
+  .accordion-item:last-child {
+    border-bottom: none;
+  }
 
   .faq-Header{
     display: flex;
@@ -47,6 +51,6 @@
   }
   
   .accordion-answer {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     color: #8a8a8a;
   }
