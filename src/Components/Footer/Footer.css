@@ -1,0 +1,52 @@
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+    background-color: #f9f8eb;
+    font-size: 14px;
+    height: 40vh;
+    width: 100%;
+}
+
+.logo2{
+    width: 200px;
+}
+
+.footer-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-cards a{
+    text-decoration: none;
+    color: rgb(87, 56, 15);
+    padding: 0.5rem;
+}
+
+.footer-cards:first-of-type a:hover {
+    background: rgba(150, 150, 150, 0.5);
+    border-radius: 5px;
+    transition: all 0.5s;
+  }
+
+.instagram{
+    margin-top: 10px;
+    width: 25px;
+    cursor: pointer;
+
+}
+
+.instagram:hover{
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 768px){
+    
+}

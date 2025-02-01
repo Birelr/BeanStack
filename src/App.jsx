@@ -5,6 +5,7 @@ import Hero from "./Components/Hero/Hero";
 import TextArea from "./Components/Textarea/TextArea";
 import Faq from "./Components/Faq/Faq";
 import Shipping from "./Components/Shipping/Shipping";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <TextArea />
       <Faq />
       <Shipping />
+      <Footer />
     </>
   );
 }
