@@ -28,6 +28,19 @@
     padding: 0.5rem;
 }
 
+.footer-cards2{
+    background-color: #f9f8eb;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: xx-small;
+}
+
+.footer-cards2 a{
+    text-decoration: none;
+    color: rgb(87, 56, 15);
+    padding: 0.5rem;
+}
+
 .footer-cards:first-of-type a:hover {
     background: rgba(150, 150, 150, 0.5);
     border-radius: 5px;
@@ -38,7 +51,6 @@
     margin-top: 10px;
     width: 25px;
     cursor: pointer;
-
 }
 
 .instagram:hover{
@@ -48,5 +60,18 @@
 
 
 @media screen and (min-width: 768px){
-    
+    .footer-content{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 0;
+        height: 50vh;
+    }
+    .footer-cards a{
+        padding: 0 1rem;
+    }
+
+    .logo2{
+        width: 150px;
+    }
 }
