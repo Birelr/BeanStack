@@ -1,25 +1,27 @@
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 import { useState } from "react";
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
-import TextArea from "./Components/Textarea/TextArea";
-import Faq from "./Components/Faq/Faq";
-import Shipping from "./Components/Shipping/Shipping";
-import Footer from "./Components/Footer/Footer";
+import HomePage from "./Pages/HomePage";
+import MainLayout from "./Layouts/MainLayout";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/about" element={<div>About</div>} />
+    </Route>
+  )
+);
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <TextArea />
-      <Faq />
-      <Shipping />
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
