@@ -36,9 +36,9 @@ const Navbar = () => {
 
       <div className={`navbar__menu ${isOpen ? "active" : ""}`}>
         <a href="/">Anasayfa</a>
-        <a href="/about">Kahveler</a>
-        <a href="#about">Hakkımızda</a>
-        <a href="#contact">İletişim</a>
+        <a href="/coffees">Kahveler</a>
+        <a href="/about">Hakkımızda</a>
+        <a href="/contact">İletişim</a>
       </div>
     </div>
   );
